@@ -184,11 +184,6 @@
   <div id="plugin-selector-WOMID1123456" style="width: 370px; height: 500px; overflow-y: auto;"></div>
 
 <script type="application/javascript">
-    Telegram.WebApp.ready();
-
-    const initData = Telegram.WebApp.initData || '';
-    const initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
-
     document.addEventListener("bullz-recorder-init", function () {
       var config = {
         organizationPublicId: "INCODEWETRUST1_60950f88936aed152f526fc2",
@@ -213,6 +208,11 @@
       console.log('bullz web recorder is ready', config);
       window.bullz.init(config);
     });
+
+    Telegram.WebApp.ready();
+
+    const initData = Telegram.WebApp.initData || '';
+    const initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
 </script>
 </body>
 </html>
